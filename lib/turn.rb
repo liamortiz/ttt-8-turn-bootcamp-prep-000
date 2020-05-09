@@ -27,8 +27,8 @@ def turn(board)
   
   if user_input == -1
     turn(board)
-  end
-  
-  move(board, user_input)
+  elsif valid_move(board, user_input)
+    move(board, user_input)
+    
   display_board(board)
 end
