@@ -25,10 +25,10 @@ def turn(board)
   
   user_input = input_to_index(gets.strip)
   
-  if user_input == -1
+  if user_input == -1 and !valid_move(board, user_input)
     turn(board)
   end
-  valid_move?(board, user_input)
+  
   move(board, user_input)
   display_board(board)
 end
