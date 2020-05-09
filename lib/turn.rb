@@ -7,9 +7,8 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
-  p "#{index} - #{board[index]}"
   if index.between?(0, 8)
-    board[index] ? board[index].strip == "" : false
+    return board[index] ? board[index].strip == "" : false
   end
   false
 end
