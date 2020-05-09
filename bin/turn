@@ -3,9 +3,10 @@ require_relative '../lib/turn'
 
 board = [""] * 9
 
-def turn(board)
-  puts "Welcome to Tic Tac Toe!"
-  display_board(board)
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
   
+  
+def turn(board)
   
 end
