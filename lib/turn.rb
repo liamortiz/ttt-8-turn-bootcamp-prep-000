@@ -8,7 +8,7 @@ end
 
 def valid_move?(board, index)
   p "#{index} - #{board[index]}"
-  if index.between?(1, 9)
+  if index.between?(0, 8)
     board[index] ? board[index].strip == "" : false
   end
   false
