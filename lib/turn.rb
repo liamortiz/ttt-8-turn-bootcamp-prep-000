@@ -8,8 +8,9 @@ end
 
 def valid_move?(board, index)
   if index.between?(1, 9)
-    return board[index] ? board[index].strip == "" : false
+    board[index] ? board[index].strip == "" : false
   end
+  false
 end
 
 def move(board, index, token='X')
