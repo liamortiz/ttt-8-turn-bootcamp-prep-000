@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 require_relative '../lib/turn'
 
+board = [""] * 9
+
+def turn(board)
+end
