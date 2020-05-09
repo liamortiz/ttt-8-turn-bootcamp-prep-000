@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
-  board[index] ? board[index].strip == "" : false
+  board[index] ? board[index].strip == "" : nil
 end
 
 def move(board, index, token='X')
