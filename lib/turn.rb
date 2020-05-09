@@ -7,9 +7,7 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
-  if index == -1
-    false
-  end
+  p index
   board[index] ? board[index].strip == "" : false
 end
 
